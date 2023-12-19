@@ -1,4 +1,4 @@
-package xposed.dummy;
+package ghlosed.dummy;
 
 import android.content.res.Resources;
 import android.content.res.TypedArray;

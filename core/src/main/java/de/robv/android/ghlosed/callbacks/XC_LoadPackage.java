@@ -18,7 +18,7 @@
  * Copyright (C) 2021 LSPosed Contributors
  */
 
-package de.robv.android.xposed.callbacks;
+package de.robv.android.ghlosed.callbacks;
 
 import android.content.pm.ApplicationInfo;
 import android.os.Bundle;
@@ -28,15 +28,15 @@ import androidx.annotation.Nullable;
 
 import java.util.concurrent.CopyOnWriteArraySet;
 
-import de.robv.android.xposed.IXposedHookLoadPackage;
-import de.robv.android.xposed.XposedBridge.CopyOnWriteSortedSet;
+import de.robv.android.ghlosed.IXghledHookLoadPackage;
+import de.robv.android.ghlosed.XghledBridge.CopyOnWriteSortedSet;
 import io.github.libxposed.api.XposedModuleInterface;
 
 /**
  * This class is only used for internal purposes, except for the {@link LoadPackageParam}
  * subclass.
  */
-public abstract class XC_LoadPackage extends XCallback implements IXposedHookLoadPackage {
+public abstract class XC_LoadPackage extends XCallback implements IXghledHookLoadPackage {
     /**
      * Creates a new callback with default priority.
      *

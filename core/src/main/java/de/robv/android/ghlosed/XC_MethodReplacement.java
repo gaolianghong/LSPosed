@@ -18,9 +18,9 @@
  * Copyright (C) 2021 LSPosed Contributors
  */
 
-package de.robv.android.xposed;
+package de.robv.android.ghlosed;
 
-import de.robv.android.xposed.callbacks.XCallback;
+import de.robv.android.ghlosed.callbacks.XCallback;
 
 /**
  * A special case of {@link XC_MethodHook} which completely replaces the original method.
@@ -51,7 +51,7 @@ public abstract class XC_MethodReplacement extends XC_MethodHook {
             Object result = replaceHookedMethod(param);
             param.setResult(result);
         } catch (Throwable t) {
-            XposedBridge.log(t);
+            XghledBridge.log(t);
             param.setThrowable(t);
         }
     }
